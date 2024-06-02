@@ -1,0 +1,160 @@
+.start {
+    position: relative;
+    box-sizing: border-box;
+    max-width: 100%;
+    width: 1212px;
+    margin: 50px auto;
+    padding: 40px;
+    text-align: center;
+    background-color: #41B066;
+    border-radius: 20px;
+}
+
+.start p {
+    margin: 0 0 40px 0;
+    font: normal 400 25px 'PT Sans', sans-serif;
+    color: white;
+}
+
+.start>p:last-of-type {
+    font-weight: 600;
+}
+
+.start img {
+    position: absolute;
+    bottom: 35%;
+    right: 20%;
+}
+
+.start a {
+    padding: 10px 35px;
+    font: normal 700 30px 'Open Sans', sans-serif;
+    color: #41B066;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.start a:hover {
+    color: white;
+    background-color: #FFE400;
+}
+
+.for-whom {
+    box-sizing: border-box;
+    max-width: 100%;
+    width: 1212px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.for-whom__avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.for-whom__avatar img {
+    width: 100%;
+}
+
+.for-whom h2 {
+    margin: 0;
+    font: normal 400 35px 'IntroDemo';
+    color: #545454;
+    text-align: center;
+}
+
+.for-whom h2 span {
+    color: #41B066;
+}
+
+.for-whom__desc {
+    width: 90%;
+    display: flex;
+    gap: 40px;
+}
+
+.for-whom__item {
+    margin-bottom: 30px;
+    display: flex;
+    gap: 30px;
+}
+
+.for-whom__item:last-child {
+    margin-bottom: 0;
+}
+
+.for-whom__item p {
+    margin: 0;
+    font: normal 400 19px 'PT Sans', sans-serif;
+}
+
+.for-whom>p {
+    margin: 0;
+    font: normal 400 20px 'IntroDemo';
+    color: #41B066;
+    text-align: center;
+}
+
+.themes>p {
+    animation-duration: 5s;
+}
+
+@media screen and (min-width: 1055px) and (max-width: 1254px) {
+    .start img {
+        left: calc(-33% + 100vw);
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1054px) {
+    .start img {
+        bottom: 30%;
+        left: calc(-27% + 100vw);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .start {
+        padding: 20px 20px 40px 20px;
+    }
+
+    .start p {
+        font-size: 20px;
+    }
+
+    .start img {
+        width: 50px;
+        bottom: 47%;
+        right: 5%;
+    }
+
+    .start a {
+        padding: 10px 8%;
+        font-size: 20px;
+    }
+
+    .for-whom__desc {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .for-whom__avatar {
+        gap: 10px;
+    }
+
+    .for-whom__avatar img {
+        width: 35%;
+    }
+
+    .for-whom__item p {
+        font-size: 18px;
+    }
+}
