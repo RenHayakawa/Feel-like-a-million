@@ -1,0 +1,178 @@
+.changes {
+    height: 544px;
+    box-sizing: border-box;
+    padding: 31px 157px 53px 151px;
+    background-color: #eff6fa;
+}
+
+.changes-wrapper {
+    box-sizing: border-box;
+    max-width: 1212px;
+}
+
+.changes-title {
+    width: 734px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 33px;
+    line-height: 135%;
+    margin: 0 auto;
+    margin-bottom: 55px;
+    color: #565656;
+}
+
+.changes-span {
+    color: #41b066;
+}
+
+.changes-list {
+    max-width: 1144px;
+    margin: 0 auto;
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.changes-group {
+    height: 325px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.changes-left {
+    width: 494px;
+}
+
+.changes-right {
+    width: 528px;
+}
+
+.changes-bold {
+    font-weight: 700;
+}
+
+.changes-green {
+    color: #41b066;
+}
+
+.changes-list p {
+    margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 151%;
+    text-align: justify;
+}
+
+.changes-right .changes_listItem:last-child p {
+    font-weight: 700;
+}
+
+.changes_listItem {
+    display: flex;
+    align-items: start;
+    gap: 13px;
+}
+
+.changes_listItem img {
+    width: 37px;
+    height: 37px;
+}
+
+@media (max-width: 1440px) {
+    .changes-title {
+        font-size: 33px;
+        width: 80vw;
+    }
+
+    .changes {
+        height: 930px;
+        padding: 0;
+        padding-top: 30px;
+    }
+
+    .changes-list {
+        width: 553px;
+        flex-direction: column;
+        margin: 0 auto;
+        gap: 60px;
+    }
+
+    .changes-list {
+        width: 70vw;
+    }
+
+    .changes-list p {
+        font-size: 25px;
+    }
+
+    .changes-group {
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .changes-list p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .changes {
+        height: 700px;
+    }
+
+    .changes-title {
+        font-size: 23px;
+    }
+
+    .changes-group {
+        gap: 15px;
+        height: 250px;
+    }
+
+    .changes-list {
+        gap: 30px;
+    }
+
+    .changes-list p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 676px) {
+    .changes {
+        height: 750px;
+        height: auto;
+        padding-bottom: 55px;
+        box-sizing: content-box;
+    }
+
+    .changes-group {
+        height: 300px;
+    }
+
+    .changes-list {
+        width: 85vw;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .changes-title {
+        font-size: 21px;
+    }
+
+    .changes-group {
+        height: 350px;
+    }
+}
+
+@media (max-width: 416px) {
+    .changes-group {
+        height: 420px;
+    }
+}
