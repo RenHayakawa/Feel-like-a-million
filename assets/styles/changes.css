@@ -1,11 +1,11 @@
 .changes {
     margin: 0 -70px;
-    height: 544px;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     box-sizing: border-box;
-    padding: 31px 157px 53px 151px;
-    background-color: #eff6fa;
+    padding: 50px 150px;
+    background-color: #F0F8FF;
 }
 
 .changes-wrapper {
@@ -14,14 +14,10 @@
 }
 
 .changes-title {
-    width: 734px;
+    max-width: 1100px;
     text-align: center;
-    font-weight: 400;
-    font-size: 33px;
-    line-height: 135%;
-    margin: 0 auto;
-    margin-bottom: 55px;
-    font: normal 400 35px 'IntroDemo';
+    margin: 0 0 50px 0;
+    font: normal 400 35px/135% 'IntroDemo';
     color: #565656;
 }
 
@@ -30,9 +26,8 @@
 }
 
 .changes-list {
-    max-width: 1144px;
     display: flex;
-    justify-content: space-between;
+    gap: 8%;
 }
 
 .changes-group {
@@ -42,16 +37,9 @@
     gap: 30px;
 }
 
-.changes-left {
-    width: 50%;
-}
-
+.changes-left,
 .changes-right {
     width: 50%;
-}
-
-.changes-bold {
-    font-weight: 700;
 }
 
 .changes-green {
@@ -60,10 +48,11 @@
 
 .changes-list p {
     margin: 0;
-    font-weight: 400;
-    font-size: 18px;
-    font: normal 400 19px 'PT Sans' sans-serif;
-    line-height: 130%;
+    font: normal 400 19px/130% 'PT Sans', sans-serif;
+}
+
+.changes-bold {
+    font-weight: 700;
 }
 
 .changes-right .changes_listItem:last-child p {
@@ -81,100 +70,40 @@
     height: 37px;
 }
 
-@media (max-width: 1440px) {
-    .changes-title {
-        font-size: 33px;
-        width: 80vw;
-    }
-
+@media screen and (min-width: 768px) and (max-width: 1310px) {
     .changes {
-        /* height: 930px; */
-        padding: 0;
-        padding-top: 30px;
+        margin: 0 -50px;
+        padding: 50px 100px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .changes {
+        margin: 0 -30px;
+        padding: 50px 30px;
     }
 
     .changes-list {
-        width: 553px;
         flex-direction: column;
-        margin: 0 auto;
-        gap: 60px;
+        align-items: center;
+        gap: 30px;
     }
 
-    .changes-list {
-        width: 70vw;
+    .changes-title {
+        font-size: 32px;
     }
 
-    .changes-list p {
-        font-size: 25px;
-    }
-
-    .changes-group {
+    .changes-left,
+    .changes-right {
         width: 100%;
     }
 
-}
-
-@media (max-width: 1000px) {
-    .changes-list p {
-        font-size: 20px;
-    }
-}
-
-@media (max-width: 768px) {
-    .changes {
-        /* height: 700px; */
-    }
-
-    .changes-title {
-        font-size: 23px;
-    }
-
-    .changes-group {
-        gap: 15px;
-        width: 95%;
-        height: 250px;
-    }
-
-    .changes-list {
-        gap: 30px;
+    .changes_listItem img {
+        width: 30px;
+        height: 30px;
     }
 
     .changes-list p {
         font-size: 18px;
-    }
-}
-
-@media (max-width: 676px) {
-    .changes {
-        /* height: 750px; */
-        height: auto;
-        padding-bottom: 55px;
-        box-sizing: content-box;
-    }
-
-    .changes-group {
-        height: 300px;
-    }
-
-    .changes-list {
-        width: 85vw;
-        height: auto;
-    }
-}
-
-@media (max-width: 480px) {
-
-    .changes-title {
-        font-size: 21px;
-    }
-
-    .changes-group {
-        height: 350px;
-    }
-}
-
-@media (max-width: 416px) {
-    .changes-group {
-        height: 420px;
     }
 }
