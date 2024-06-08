@@ -13,11 +13,14 @@
 
 .author__who {
     box-sizing: border-box;
-    position: relative;
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.author__image {
+    position: relative;
 }
 
 .author__image h3 {
@@ -88,6 +91,98 @@
     color: #545454;
 }
 
+.author__text p:last-child {
+    margin: 0;
+}
+
 .author__text p>span {
     font-weight: bolder;
+}
+
+@media screen and (max-width: 1250px) {
+    .author {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .author__who {
+        width: 100%;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .author__image img {
+        max-width: none;
+    }
+
+    .author__name {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .author__name h2 {
+        margin: 0 0 30px 0;
+        text-align: center;
+    }
+
+    .author__name img {
+        position: unset;
+    }
+
+    .author__text {
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .author__image img {
+        max-width: 485px;
+    }
+
+    .author__text h4 {
+        font-size: 20px;
+    }
+
+    .author__text p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 420px) and (max-width: 767px) {
+    .author__image h3 {
+        left: -40px;
+        width: 270px;
+        height: 60px;
+        font-size: 27px;
+    }
+
+    .author__name h2 {
+        font-size: 40px;
+    }
+
+    .author__name img {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media screen and (max-width: 419px) {
+    .author__image h3 {
+        left: -20px;
+        width: 220px;
+        height: 45px;
+        font-size: 23px;
+    }
+
+    .author__name h2 {
+        font-size: 30px;
+    }
+
+    .author__name img {
+        width: 50px;
+        height: 50px;
+    }
 }
