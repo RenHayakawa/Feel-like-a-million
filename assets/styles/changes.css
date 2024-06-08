@@ -1,6 +1,8 @@
 .changes {
     margin: 0 -70px;
     height: 544px;
+    display: flex;
+    justify-content: center;
     box-sizing: border-box;
     padding: 31px 157px 53px 151px;
     background-color: #eff6fa;
@@ -19,6 +21,7 @@
     line-height: 135%;
     margin: 0 auto;
     margin-bottom: 55px;
+    font: normal 400 35px 'IntroDemo';
     color: #565656;
 }
 
@@ -28,14 +31,11 @@
 
 .changes-list {
     max-width: 1144px;
-    margin: 0 auto;
-    margin-top: 55px;
     display: flex;
     justify-content: space-between;
 }
 
 .changes-group {
-    height: 325px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -43,11 +43,11 @@
 }
 
 .changes-left {
-    width: 494px;
+    width: 50%;
 }
 
 .changes-right {
-    width: 528px;
+    width: 50%;
 }
 
 .changes-bold {
@@ -62,8 +62,8 @@
     margin: 0;
     font-weight: 400;
     font-size: 18px;
-    line-height: 151%;
-    text-align: justify;
+    font: normal 400 19px 'PT Sans' sans-serif;
+    line-height: 130%;
 }
 
 .changes-right .changes_listItem:last-child p {
@@ -88,7 +88,7 @@
     }
 
     .changes {
-        height: 930px;
+        /* height: 930px; */
         padding: 0;
         padding-top: 30px;
     }
@@ -109,7 +109,7 @@
     }
 
     .changes-group {
-        width: 90%;
+        width: 100%;
     }
 
 }
@@ -122,7 +122,7 @@
 
 @media (max-width: 768px) {
     .changes {
-        height: 700px;
+        /* height: 700px; */
     }
 
     .changes-title {
@@ -131,6 +131,7 @@
 
     .changes-group {
         gap: 15px;
+        width: 95%;
         height: 250px;
     }
 
@@ -145,7 +146,7 @@
 
 @media (max-width: 676px) {
     .changes {
-        height: 750px;
+        /* height: 750px; */
         height: auto;
         padding-bottom: 55px;
         box-sizing: content-box;
