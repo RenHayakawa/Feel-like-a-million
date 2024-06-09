@@ -1,8 +1,3 @@
-.main-containe {
-    max-width: 100%;
-    width: 1212px;
-}
-
 .main-container-text h2 {
     color: #545454;
     font-family: 'IntroDemo';
@@ -41,7 +36,7 @@
     text-align: center;
     line-height: 35px;
     margin: 0;
-    padding-top: 2em;
+    padding-top: 50px;
 }
 
 .img-smile {
