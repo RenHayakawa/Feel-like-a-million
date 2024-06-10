@@ -153,12 +153,16 @@
 
 .running-line p {
     margin: 0;
-    padding: 30px 100px;
+    padding: 30px 99px;
     font: normal 400 22px 'IntroDemo';
     text-transform: uppercase;
     color: white;
-    text-wrap: nowrap;
+    white-space: nowrap;
     animation: line 7s linear infinite forwards;
+}
+
+.themes>p {
+    animation-duration: 5s;
 }
 
 @keyframes line {
