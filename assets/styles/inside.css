@@ -79,9 +79,6 @@
 }
 
 @media (max-width: 530px) {
-    .inside h2 {
-        /* font-size: 23px; */
-    }
 
     .inside-item {
         width: 100%;
@@ -92,10 +89,6 @@
     .item-pic img {
         width: 100px;
     }
-/* 
-    .inside h3 {
-        font-size: 18px;
-    } */
 
     .inside p {
         font-size: 18px;
