@@ -79,13 +79,7 @@
 .for-whom__desc {
     width: 90%;
     display: flex;
-    gap: 30px;
-}
-
-.for-whom__desc-one, .for-whom__desc-two {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    gap: 40px;
 }
 
 .for-whom__item {
