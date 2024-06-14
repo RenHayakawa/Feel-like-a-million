@@ -2,7 +2,7 @@
     box-sizing: border-box;
     max-width: 100%;
     width: 1212px;
-    margin: 50px auto;
+    margin: 50px auto 0;
     padding: 60px 40px;
     display: flex;
     justify-content: space-evenly;
@@ -142,16 +142,6 @@
         max-width: 485px;
     }
 
-    .author__text h4 {
-        font-size: 20px;
-    }
-
-    .author__text p {
-        font-size: 18px;
-    }
-}
-
-@media screen and (min-width: 420px) and (max-width: 767px) {
     .author__image h3 {
         left: -40px;
         width: 270px;
@@ -166,6 +156,14 @@
     .author__name img {
         width: 70px;
         height: 70px;
+    }
+
+    .author__text h4 {
+        font-size: 20px;
+    }
+
+    .author__text p {
+        font-size: 18px;
     }
 }
 

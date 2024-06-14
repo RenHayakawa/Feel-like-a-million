@@ -244,6 +244,7 @@
 
     .guide__desc-text h1 {
         width: fit-content;
+        margin-right: 28px;
         font-size: 30px;
         letter-spacing: 2px;
     }
@@ -274,7 +275,6 @@
 
 @media screen and (max-width: 409px) {
     .guid__desc-headers img {
-        top: 15px;
-        left: calc(-120px + 100vw);
+        left: calc(-130px + 100vw);
     }
 }
