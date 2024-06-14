@@ -175,7 +175,7 @@
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1310px) {
+@media screen and (max-width: 1310px) {
     .guide {
         flex-direction: column;
         align-items: center;
@@ -197,8 +197,7 @@
     }
 
     .guid__desc-headers img {
-        top: 35px;
-        right: 0px;
+        right: unset;
         left: 515px;
     }
 
@@ -215,29 +214,12 @@
 }
 
 @media screen and (max-width: 767px) {
-    .running-line {
-        width: calc(100% + 60px);
-        margin: 50px -30px 0 -30px;
-    }
-
-    .running-line p {
-        padding: 20px 70px;
-        font-size: 18px;
-    }
-}
-
-@media screen and (min-width: 410px) and (max-width: 767px) {
     .guide {
         padding: 70px 20px 40px 20px;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 35px;
-    }
-
-    .guid__desc,
-    .guide__image {
-        width: 100%;
     }
 
     .guid__desc-headers h2 {
@@ -261,17 +243,14 @@
     }
 
     .guide__desc-text h1 {
+        width: fit-content;
+        margin-right: 28px;
         font-size: 30px;
         letter-spacing: 2px;
     }
 
     .guide__desc-text p {
         font-size: 16px;
-    }
-
-    .guide__desc-item img {
-        width: 30px;
-        height: 30px;
     }
 
     .guide__desc-item p {
@@ -281,63 +260,21 @@
     .guide__button {
         padding: 10px 13%;
         font-size: 20px;
+    }
+
+    .running-line {
+        width: calc(100% + 60px);
+        margin: 50px -30px 0 -30px;
+    }
+
+    .running-line p {
+        padding: 20px 70px;
+        font-size: 18px;
     }
 }
 
 @media screen and (max-width: 409px) {
-    .guide {
-        padding: 70px 20px 40px 20px;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 35px;
-    }
-
-    .guid__desc,
-    .guide__image {
-        width: 100%;
-    }
-
-    .guid__desc-headers h2 {
-        left: -20px;
-        width: 120px;
-        height: 56px;
-        font-size: 30px;
-    }
-
-    .guid__desc-headers h3 {
-        left: -40px;
-        width: 270px;
-        height: 60px;
-        font-size: 27px;
-    }
-
     .guid__desc-headers img {
-        top: 15px;
-        left: calc(-120px + 100vw);
-        width: 50px;
-    }
-
-    .guide__desc-text h1 {
-        font-size: 30px;
-        letter-spacing: 2px;
-    }
-
-    .guide__desc-text p {
-        font-size: 16px;
-    }
-
-    .guide__desc-item img {
-        width: 30px;
-        height: 30px;
-    }
-
-    .guide__desc-item p {
-        font-size: 18px;
-    }
-
-    .guide__button {
-        padding: 10px 13%;
-        font-size: 20px;
+        left: calc(-130px + 100vw);
     }
 }
