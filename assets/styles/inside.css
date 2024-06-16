@@ -1,0 +1,102 @@
+.inside {
+    max-width: 1212px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inside-green {
+    color: #41B066;
+}
+
+.inside p {
+    font: normal 400 19px 'PT Sans', sans-serif;
+}
+
+.inside h2 {
+    margin: 50px 0;
+    color: #545454;
+    font: normal 400 35px/135% 'IntroDemo';
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.inside h3 {
+    text-transform: uppercase;
+    font: bold 20px 'IntroDemo';
+    margin-top: 0;
+    color: #545454;
+}
+
+.inside-container {
+    margin: 0 0 50px 0;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.inside-item {
+    width: 503px;
+    height: 320px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 20px 30px;
+    border-radius: 20px;
+    background-color: #F0F8FF;
+}
+
+.item-pic {
+    width: 130px;
+}
+
+.inside-item img {
+    width: 130px;
+}
+
+.pay-button {
+    width: 370px;
+    height: 64px;
+    box-sizing: border-box;
+    font: normal 700 26px 'Open Sans', sans-serif;
+    color: white;
+    text-decoration: none;
+    background-color: #a680d2;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: color 0.2s ease-in-out;
+}
+
+.pay-button:hover {
+    color: #FFE400;
+}
+
+@media (max-width: 530px) {
+
+    .inside-item {
+        width: 100%;
+        height: unset;
+    }
+
+    .item-pic,
+    .item-pic img {
+        width: 100px;
+    }
+
+    .inside p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 400px) {
+    .pay-button {
+        width: 100%;
+    }
+}
