@@ -158,11 +158,15 @@
     text-transform: uppercase;
     color: white;
     white-space: nowrap;
-    animation: line 7s linear infinite forwards;
+    animation: line 8s linear infinite forwards;
 }
 
 .themes>p {
     animation-duration: 5s;
+}
+
+.feedback>p {
+    animation-duration: 2.5s;
 }
 
 @keyframes line {
