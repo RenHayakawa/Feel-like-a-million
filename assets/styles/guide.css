@@ -152,17 +152,22 @@
 }
 
 .running-line p {
+    width: 100%;
     margin: 0;
     padding: 30px 99px;
     font: normal 400 22px 'IntroDemo';
     text-transform: uppercase;
     color: white;
     white-space: nowrap;
-    animation: line 7s linear infinite forwards;
+    animation: line 8s linear infinite forwards;
 }
 
 .themes>p {
     animation-duration: 5s;
+}
+
+.feedback>p {
+    animation-duration: 2.5s;
 }
 
 @keyframes line {
@@ -268,8 +273,13 @@
     }
 
     .running-line p {
-        padding: 20px 70px;
+        padding: 20px 300px;
         font-size: 18px;
+    }
+
+    .themes>p,
+    .feedback>p {
+        padding: 20px 70px;
     }
 }
 
