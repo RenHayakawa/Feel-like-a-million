@@ -1,19 +1,16 @@
 .feedback {
     margin-top: 50px;
-}
-
-.feedback-slider {
-    position: relative;
-    width: 350px;
-    margin: 0 auto;
-    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .slider__img {
     display: flex;
     flex-direction: row;
     gap: 30px;
-
+    position: relative;
+    overflow: hidden;
     transition: transform 0.5s ease-in-out;
 }
 
@@ -25,20 +22,41 @@
 
 .prev-button,
 .next-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: transparent;
+    height: 40px;
+    width: 40px;
     border: none;
-    z-index: 1;
     font-size: 30px;
-    color: #41B066;
+    font-family: "Open Sans";
+    color: #fff;
+    background: #41B066;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
 }
 
-.prev-button {
-    left: 10px;
+.prev-button:hover,
+.next-button:hover {
+    color: white;
+    background-color: #FFE400;
 }
 
-.next-button {
-    right: 10px;
+@media screen and (max-width: 530px) {
+
+    .prev-button,
+    .next-button {
+        height: 28px;
+        width: 28px;
+        font-size: 22px;
+    }
+
+    .slider__img img {
+        width: 90%;
+        height: 90%;
+        object-fit: cover;
+    }
+
+    .slider__img {
+        display: flex;
+        justify-content: center;
+    }
 }
