@@ -38,14 +38,14 @@
 @media screen and (min-width: 775px) and (max-width: 1150px) {
 
     .container-fluid {
-        max-width: 800px;
+        max-width: 950px;
     }
 }
 
 @media screen and (max-width: 774px) {
 
     .container-fluid {
-        max-width: 600px;
+        max-width: 650px;
     }
 
     .container-fluid__privacy {
