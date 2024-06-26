@@ -4,7 +4,7 @@ body {
     padding: 120px 70px 0 70px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1310px) {
+@media screen and (max-width: 1310px) {
     body {
         padding: 120px 50px 0 50px;
     }

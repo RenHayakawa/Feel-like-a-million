@@ -38,9 +38,19 @@
     transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
-.start a:hover {
-    color: white;
-    background-color: #FFE400;
+@media (hover:hover) {
+    .start a:hover {
+        color: white;
+        background-color: #FFE400;
+    }
+}
+
+@media (hover:none) {
+    .start a:active {
+        color: white;
+        background-color: #FFE400;
+        transition: color 0.1s ease-out, background-color 0.1s ease-out;
+    }
 }
 
 .for-whom {
