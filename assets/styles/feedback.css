@@ -30,13 +30,13 @@
     text-align: center;
     cursor: pointer;
     border-radius: 50%;
+    user-select: none;
 }
 
 @media (hover:hover) {
 
     .prev-button:hover,
     .next-button:hover {
-        color: white;
         background-color: #FFE400;
         transition: background-color 0.1s ease-out;
     }
@@ -46,7 +46,6 @@
 
     .prev-button:active,
     .next-button:active {
-        color: white;
         background-color: #FFE400;
     }
 }
@@ -59,6 +58,7 @@
         height: 38px;
         width: 38px;
         font-size: 24px;
+        min-width: 38px;
     }
 }
 
@@ -69,6 +69,7 @@
         height: 30px;
         width: 30px;
         font-size: 20px;
+        min-width: 30px;
     }
 }
 
@@ -79,5 +80,6 @@
         height: 26px;
         width: 26px;
         font-size: 18px;
+        min-width: 26px;
     }
 }
