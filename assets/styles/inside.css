@@ -83,6 +83,8 @@
     .inside-item {
         width: 100%;
         height: unset;
+        gap: 0;
+        row-gap: 15px;
     }
 
     .item-pic,
