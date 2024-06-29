@@ -174,7 +174,7 @@
     animation-duration: 5s;
 }
 
-.feedback>p {
+.feedback-line>p {
     animation-duration: 2.5s;
 }
 
@@ -291,7 +291,7 @@
     }
 
     .themes>p,
-    .feedback>p {
+    .feedback-line>p {
         padding: 20px 70px;
     }
 }
