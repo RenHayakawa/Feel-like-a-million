@@ -86,8 +86,7 @@
 
 .author__text p {
     margin: 0 0 30px 0;
-    font: normal 400 20px 'PT Sans', sans-serif;
-    line-height: 29px;
+    font: normal 400 20px/130% 'PT Sans', sans-serif;
     color: #545454;
 }
 
@@ -135,6 +134,11 @@
         width: 100%;
         margin-top: 30px;
     }
+
+    .author__text h4,
+    .author__text p {
+        text-align: justify;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -150,7 +154,7 @@
     }
 
     .author__name h2 {
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .author__name img {
@@ -173,10 +177,6 @@
         width: 220px;
         height: 45px;
         font-size: 23px;
-    }
-
-    .author__name h2 {
-        font-size: 30px;
     }
 
     .author__name img {
