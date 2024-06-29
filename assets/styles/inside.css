@@ -40,7 +40,6 @@
 }
 
 .inside-item {
-    /* width: 533px; */
     max-width: 100%;
     height: 320px;
     box-sizing: border-box;
@@ -77,9 +76,6 @@
     transition: color 0.2s ease-in-out;
 }
 
-.pay-button:hover {
-    color: #FFE400;
-}
 
 @media(max-width: 1150px) {
     .inside-container {
@@ -118,5 +114,17 @@
 @media (max-width: 400px) {
     .pay-button {
         width: 100%;
+    }
+}
+
+@media (hover: hover) {
+    .pay-button:hover {
+        color: #FFE400;
+    }
+}
+
+@media (hover: none) {
+    .pay-button:active {
+        color: #FFE400;
     }
 }
