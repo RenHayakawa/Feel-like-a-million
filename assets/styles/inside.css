@@ -31,14 +31,17 @@
 
 .inside-container {
     margin: 0 0 50px 0;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     justify-content: center;
     gap: 16px;
     flex-wrap: wrap;
 }
 
 .inside-item {
-    width: 503px;
+    /* width: 533px; */
+    max-width: 100%;
     height: 320px;
     box-sizing: border-box;
     display: flex;
@@ -78,10 +81,25 @@
     color: #FFE400;
 }
 
+@media(max-width: 1150px) {
+    .inside-container {
+        display: flex;
+    }
+
+    .inside-item {
+        width: 520px;
+    }
+}
+
+@media (max-width: 581px) {
+    .inside-item {
+        width: 100%;
+    }
+}
+
 @media (max-width: 530px) {
 
     .inside-item {
-        width: 100%;
         height: unset;
         gap: 0;
         row-gap: 15px;
