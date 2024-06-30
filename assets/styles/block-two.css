@@ -3,7 +3,7 @@
     font-family: 'IntroDemo';
     font-weight: 900;
     margin: auto;
-    font-size: 35px;
+    font-size: 30px;
     line-height: 50px;
 }
 
@@ -11,7 +11,7 @@
     color: #41B066;
     font-family: 'IntroDemo';
     font-weight: 900;
-    font-size: 35px;
+    font-size: 30px;
     line-height: 50px;
 }
 
@@ -24,7 +24,7 @@
 .p-bold {
     color: black;
     font-size: 20px;
-    font-family: "Open Sans";
+    font-family: 'PT Sans';
     font-weight: 400;
 }
 
@@ -123,13 +123,14 @@
     position: relative;
     box-sizing: border-box;
     width: 60%;
+    height: 100%;
     display: flex;
     flex-direction: column;
 }
 
 .item-box__text {
     width: 100%;
-    max-width: 300px;
+    max-width: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -144,7 +145,7 @@
 .item-box__text h4 {
     margin: 10px 0;
     padding-left: 20px;
-    font: normal 600 24px 'IntroDemo';
+    font: normal 600 23px/130% 'IntroDemo';
     text-transform: uppercase;
     color: #545454;
 }
@@ -152,7 +153,7 @@
 .item-box__text p {
     padding-left: 20px;
     color: black;
-    font: normal 500 21px 'Open Sans';
+    font: normal 500 20px/130% 'PT Sans';
 }
 
 .premium-bonus {
@@ -211,7 +212,7 @@
 
 .premium-bonus__item-text p {
     padding-top: 10px;
-    font: normal 600 25px 'Open Sans';
+    font: normal 600 30px 'PT Sans';
     color: #fff;
 }
 
@@ -248,11 +249,13 @@
     background-color: #FFE400;
 }
 
-@media screen and (min-width: 775px) and (max-width: 1150px) {
+@media screen and (min-width: 775px) and (max-width: 1121px) {
 
     .main-container-text h2,
     .main-container-text h2 span {
-        font-size: 26px;
+        font-size: 30px;
+        line-height: 135%;
+
     }
 
     .main-container-text h2 img {
@@ -262,7 +265,8 @@
 
     .p-thin,
     .p-bold {
-        font-size: 16px;
+        font-size: 20px;
+        line-height: 130%;
     }
 
     .bonuses {
@@ -270,6 +274,7 @@
         flex-direction: column;
         gap: 50px;
         width: 800px;
+        align-items: center;
     }
 
     .bonus__item-two__header,
@@ -282,12 +287,22 @@
         height: 50px;
     }
 
+    .bonus__item {
+        width: 503px;
+        height: 320px;
+    }
+
     .item-box__text h4 {
-        font: normal 600 22px 'IntroDemo';
+        font: normal 600 22px/130% 'IntroDemo';
     }
 
     .item-box__text p {
-        font: normal 500 20px 'Open Sans';
+        font: normal 500 20px/130% 'PT Sans', sans-serif;
+    }
+
+    .item-box__img img {
+        width: 90%;
+        max-width: 200px;
     }
 
     .premium-bonus {
@@ -309,7 +324,7 @@
 
     .premium-bonus__item-text p {
         padding-top: 20px;
-        font: normal 600 28px 'Open Sans';
+        font: normal 600 28px 'PT Sans';
     }
 
     .premium-bonus__item-header {
@@ -326,7 +341,7 @@
     }
 
     .premium-bonus__btn {
-        font: normal 700 35px 'Open Sans', sans-serif;
+        font: normal 700 30px 'Open Sans', sans-serif;
     }
 }
 
@@ -334,8 +349,8 @@
 
     .main-container-text h2,
     .main-container-text h2 span {
-        font-size: 20px;
-        line-height: 30px;
+        font-size: 28px;
+        line-height: 135%;
     }
 
     .main-container-text h2 img {
@@ -345,13 +360,15 @@
 
     .p-thin,
     .p-bold {
-        font-size: 16px;
+        font-size: 18px;
+        line-height: 130%;
     }
 
     .bonuses {
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        align-items: center;
+        gap: 50px;
         padding-top: 2em;
     }
 
@@ -370,14 +387,19 @@
         max-width: 150px;
     }
 
+    .bonus__item {
+        width: 503px;
+        height: 320px;
+    }
+
     .item-box__text h4 {
         padding-left: 16px;
-        font: normal 600 18px 'IntroDemo';
+        font: normal 600 20px/130% 'IntroDemo';
     }
 
     .item-box__text p {
         padding-left: 16px;
-        font: normal 500 14px 'Open Sans';
+        font: normal 500 18px/130% 'PT Sans';
     }
 
     .item-box__img {
@@ -417,11 +439,28 @@
     }
 
     .premium-bonus__item-text p {
-        font: normal 600 16px 'Open Sans';
+        font: normal 600 18px/130% 'PT Sans';
     }
 
 
     .premium-bonus__btn {
         font: normal 700 20px 'Open Sans', sans-serif;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    .item-box__text h4 {
+        padding-left: 16px;
+        font: normal 600 18px/130% 'IntroDemo';
+    }
+
+    .item-box__text p {
+        padding-left: 16px;
+        font: normal 500 16px/130% 'PT Sans';
+    }
+
+    .item-box__img {
+        max-width: 120px;
     }
 }
