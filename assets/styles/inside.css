@@ -11,34 +11,36 @@
 }
 
 .inside p {
-    font: normal 400 19px 'PT Sans', sans-serif;
+    font: normal 400 20px 'PT Sans', sans-serif;
 }
 
 .inside h2 {
     margin: 50px 0;
     color: #545454;
-    font: normal 400 35px/135% 'IntroDemo';
+    font: normal 400 30px/135% 'IntroDemo';
     text-transform: uppercase;
     text-align: center;
 }
 
 .inside h3 {
     text-transform: uppercase;
-    font: bold 20px 'IntroDemo';
+    font: bold 23px/130% 'IntroDemo';
     margin-top: 0;
     color: #545454;
 }
 
 .inside-container {
     margin: 0 0 50px 0;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     justify-content: center;
     gap: 16px;
     flex-wrap: wrap;
 }
 
 .inside-item {
-    width: 503px;
+    max-width: 100%;
     height: 320px;
     box-sizing: border-box;
     display: flex;
@@ -61,7 +63,7 @@
     width: 370px;
     height: 64px;
     box-sizing: border-box;
-    font: normal 700 26px 'Open Sans', sans-serif;
+    font: normal 700 30px 'Open Sans', sans-serif;
     color: white;
     text-decoration: none;
     background-color: #a680d2;
@@ -74,15 +76,46 @@
     transition: color 0.2s ease-in-out;
 }
 
-.pay-button:hover {
-    color: #FFE400;
+
+@media(max-width: 1150px) {
+    .inside-container {
+        display: flex;
+        width: 100%;
+    }
+
+    .inside-item {
+        width: 520px;
+    }
+
+    .inside h3 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 581px) {
+    .inside-item {
+        width: 100%;
+    }
+
+    .inside h3 {
+        font-size: 20px;
+    }
+
+    .inside h2 {
+        font-size: 28px;
+    }
+
+    .pay-button {
+        font-size: 26px;
+    }
 }
 
 @media (max-width: 530px) {
 
     .inside-item {
-        width: 100%;
         height: unset;
+        gap: 0;
+        row-gap: 15px;
     }
 
     .item-pic,
@@ -98,5 +131,17 @@
 @media (max-width: 400px) {
     .pay-button {
         width: 100%;
+    }
+}
+
+@media (hover: hover) {
+    .pay-button:hover {
+        color: #FFE400;
+    }
+}
+
+@media (hover: none) {
+    .pay-button:active {
+        color: #FFE400;
     }
 }
