@@ -16,7 +16,7 @@
     max-width: 1100px;
     text-align: center;
     margin: 0 0 50px 0;
-    font: normal 400 35px/135% 'IntroDemo';
+    font: normal 400 30px/135% 'IntroDemo';
     color: #565656;
 }
 
@@ -47,7 +47,7 @@
 
 .changes-list p {
     margin: 0;
-    font: normal 400 19px/130% 'PT Sans', sans-serif;
+    font: normal 400 20px/130% 'PT Sans', sans-serif;
 }
 
 .changes-bold {
@@ -89,7 +89,7 @@
     }
 
     .changes-title {
-        font-size: 32px;
+        font-size: 28px;
     }
 
     .changes-left,

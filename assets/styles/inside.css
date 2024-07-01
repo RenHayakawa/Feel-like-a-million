@@ -17,14 +17,14 @@
 .inside h2 {
     margin: 50px 0;
     color: #545454;
-    font: normal 400 35px/135% 'IntroDemo';
+    font: normal 400 30px/135% 'IntroDemo';
     text-transform: uppercase;
     text-align: center;
 }
 
 .inside h3 {
     text-transform: uppercase;
-    font: bold 20px 'IntroDemo';
+    font: bold 23px/130% 'IntroDemo';
     margin-top: 0;
     color: #545454;
 }
@@ -63,7 +63,7 @@
     width: 370px;
     height: 64px;
     box-sizing: border-box;
-    font: normal 700 26px 'Open Sans', sans-serif;
+    font: normal 700 30px 'Open Sans', sans-serif;
     color: white;
     text-decoration: none;
     background-color: #a680d2;
@@ -85,11 +85,27 @@
     .inside-item {
         width: 520px;
     }
+
+    .inside h3 {
+        font-size: 22px;
+    }
 }
 
 @media (max-width: 581px) {
     .inside-item {
         width: 100%;
+    }
+
+    .inside h2 {
+        font-size: 28px;
+    }
+
+    .inside h3 {
+        font-size: 20px;
+    }
+
+    .pay-button {
+        font-size: 26px;
     }
 }
 
