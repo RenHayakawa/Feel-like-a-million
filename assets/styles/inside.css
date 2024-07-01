@@ -11,7 +11,7 @@
 }
 
 .inside p {
-    font: normal 400 19px 'PT Sans', sans-serif;
+    font: normal 400 20px 'PT Sans', sans-serif;
 }
 
 .inside h2 {
@@ -80,6 +80,7 @@
 @media(max-width: 1150px) {
     .inside-container {
         display: flex;
+        width: 100%;
     }
 
     .inside-item {
@@ -88,6 +89,10 @@
 
     .inside h3 {
         font-size: 22px;
+    }
+
+    .inside h3 {
+        font-size: 20px;
     }
 }
 
@@ -98,10 +103,6 @@
 
     .inside h2 {
         font-size: 28px;
-    }
-
-    .inside h3 {
-        font-size: 20px;
     }
 
     .pay-button {
