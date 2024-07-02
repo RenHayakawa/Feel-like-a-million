@@ -162,7 +162,7 @@
     box-sizing: border-box;
     max-width: 100%;
     width: 1212px;
-    margin: 0 auto 50px;
+    margin: 0 auto;
     padding: 20px 20px 40px 20px;
     display: flex;
     justify-content: space-between;
