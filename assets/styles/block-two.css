@@ -26,6 +26,7 @@
     font-size: 20px;
     font-family: 'PT Sans';
     font-weight: 400;
+    line-height: 130%;
 }
 
 .p-bold {
@@ -249,7 +250,7 @@
     background-color: #FFE400;
 }
 
-@media screen and (min-width: 775px) and (max-width: 1121px) {
+@media screen and (max-width: 1121px) {
 
     .main-container-text h2,
     .main-container-text h2 span {
@@ -361,7 +362,6 @@
     .p-thin,
     .p-bold {
         font-size: 18px;
-        line-height: 130%;
     }
 
     .bonuses {
@@ -389,7 +389,7 @@
 
     .bonus__item {
         width: 503px;
-        height: 320px;
+        height: unset;
     }
 
     .item-box__text h4 {
@@ -449,16 +449,6 @@
 }
 
 @media screen and (max-width: 425px) {
-
-    .item-box__text h4 {
-        padding-left: 16px;
-        font: normal 600 18px/130% 'IntroDemo';
-    }
-
-    .item-box__text p {
-        padding-left: 16px;
-        font: normal 500 16px/130% 'PT Sans';
-    }
 
     .item-box__img {
         max-width: 120px;
