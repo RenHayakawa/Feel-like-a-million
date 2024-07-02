@@ -75,8 +75,7 @@
 
 .guide__desc-text p {
     margin: 24px 0 37px 0;
-    font: normal 600 20px 'IntroDemo';
-    line-height: 27px;
+    font: normal 600 23px/130% 'IntroDemo';
     text-transform: uppercase;
     color: #545454;
 }
@@ -103,7 +102,7 @@
 
 .guide__desc-item p {
     margin: 0;
-    font: normal 400 19px 'PT Sans', sans-serif;
+    font: normal 400 20px/130% 'PT Sans', sans-serif;
 }
 
 .guide__desc-item p span {
@@ -138,8 +137,17 @@
     transition: color 0.2s ease-in-out;
 }
 
-.guide__button:hover {
-    color: #FFE400;
+@media (hover:hover) {
+    .guide__button:hover {
+        color: #FFE400;
+    }
+}
+
+@media (hover:none) {
+    .guide__button:active {
+        color: #FFE400;
+        transition: color 0.1s ease-out;
+    }
 }
 
 .running-line {
@@ -152,17 +160,22 @@
 }
 
 .running-line p {
+    width: 100%;
     margin: 0;
     padding: 30px 99px;
     font: normal 400 22px 'IntroDemo';
     text-transform: uppercase;
     color: white;
     white-space: nowrap;
-    animation: line 7s linear infinite forwards;
+    animation: line 8s linear infinite forwards;
 }
 
 .themes>p {
     animation-duration: 5s;
+}
+
+.feedback-line>p {
+    animation-duration: 2.5s;
 }
 
 @keyframes line {
@@ -203,13 +216,17 @@
 
     .guide__desc-text h1 {
         width: 546px;
-        font: normal 600 70px 'IntroDemo';
-        letter-spacing: 4px;
     }
 
     .running-line {
         width: calc(100% + 100px);
         margin: 50px -50px 0 -50px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .guide__desc-text p {
+        font-size: 22px;
     }
 }
 
@@ -244,13 +261,14 @@
 
     .guide__desc-text h1 {
         width: fit-content;
-        margin-right: 28px;
+        margin-right: 23px;
         font-size: 30px;
+        line-height: 135%;
         letter-spacing: 2px;
     }
 
     .guide__desc-text p {
-        font-size: 16px;
+        font-size: 20px;
     }
 
     .guide__desc-item p {
@@ -268,8 +286,13 @@
     }
 
     .running-line p {
-        padding: 20px 70px;
+        padding: 20px 300px;
         font-size: 18px;
+    }
+
+    .themes>p,
+    .feedback-line>p {
+        padding: 20px 70px;
     }
 }
 

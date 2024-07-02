@@ -1,6 +1,8 @@
 .self-actualization {
-    margin-top: 50px;
-    width: 100%;
+    box-sizing: border-box;
+    max-width: 100%;
+    width: 1212px;
+    margin: 50px auto 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,6 +11,7 @@
 }
 
 .self-actualization__menu {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,19 +19,20 @@
 
 .self-actualization__text {
     box-sizing: border-box;
+    width: 503px;
     padding: 5px 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 30px;
     background-color: #F0F8FF;
     border-radius: 100px;
     cursor: pointer;
+    user-select: none;
 }
 
 .self-actualization__text p {
     margin: 0;
-    font: normal 400 20px 'IntroDemo';
+    font: normal 400 22px 'IntroDemo';
     color: #545454;
 }
 
@@ -46,9 +50,65 @@
     width: 100%;
 }
 
+.self-actualization__list {
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 30px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: #F0F8FF;
+    border-radius: 20px;
+}
+
+.close {
+    display: none;
+}
+
+.self-actualization__desc,
+.self-actualization__list ul {
+    margin: 0;
+    font: normal 400 20px/130% 'PT Sans', sans-serif;
+}
+
+.self-actualization__list ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.info-later {
+    text-align: center;
+}
+
+.self-actualization__week p {
+    margin: 0 0 15px 0;
+    padding: 10px;
+    font: normal 600 20px/130% 'PT Sans', sans-serif;
+    text-align: center;
+    background-color: #FAEBD7;
+}
+
+.self-actualization__list li {
+    margin-bottom: 15px;
+}
+
+.self-actualization__list li:last-child {
+    margin-bottom: 0;
+}
+
+.self-actualization__desc>span,
+.self-actualization__list ul span {
+    font-weight: bolder;
+}
+
 @media screen and (max-width: 478px) {
     .self-actualization__text {
-        gap: 20px;
+        width: 100%;
+    }
+
+    .self-actualization__list {
+        padding: 30px;
     }
 
     .self-actualization__text p {
@@ -58,5 +118,11 @@
 
     .self-actualization__text img {
         width: 40px;
+    }
+
+    .self-actualization__desc,
+    .self-actualization__week p,
+    .self-actualization__list ul {
+        font-size: 18px;
     }
 }
