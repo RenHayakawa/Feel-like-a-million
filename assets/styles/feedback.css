@@ -25,21 +25,12 @@
     border: none;
     font-size: 32px;
     font-family: "Open Sans";
-    line-height: 15px;
     color: #fff;
     background: #41B066;
     text-align: center;
     cursor: pointer;
     border-radius: 50%;
     user-select: none;
-}
-
-.prev-button::after {
-    content: "\3C";
-}
-
-.next-button::after {
-    content: "\3E";
 }
 
 @media (hover:hover) {
@@ -60,7 +51,6 @@
     }
 }
 
-
 @media screen and (max-width: 590px) {
 
     .prev-button,
@@ -68,7 +58,7 @@
         height: 38px;
         width: 38px;
         min-width: 38px;
-        min-height: 38px;
+        min-height: 36px;
         font-size: 24px;
     }
 }
@@ -80,7 +70,6 @@
         height: 30px;
         width: 30px;
         min-width: 30px;
-        min-height: 30px;
         font-size: 20px;
     }
 }
@@ -92,7 +81,6 @@
         height: 26px;
         width: 26px;
         min-width: 26px;
-        min-height: 26px;
         font-size: 18px;
     }
 }
