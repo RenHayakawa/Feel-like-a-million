@@ -34,6 +34,14 @@
     user-select: none;
 }
 
+.prev-button::after {
+    content: "\3C";
+}
+
+.next-button::after {
+    content: "\3E";
+}
+
 @media (hover:hover) {
 
     .prev-button:hover,
