@@ -47,6 +47,7 @@
     .prev-button:active,
     .next-button:active {
         background-color: #FFE400;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     }
 }
 

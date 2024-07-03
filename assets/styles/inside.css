@@ -143,5 +143,6 @@
 @media (hover: none) {
     .pay-button:active {
         color: #FFE400;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     }
 }
